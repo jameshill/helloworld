@@ -3,3 +3,7 @@ steps:
     command: .buildkite/steps/publish.sh
     key: publish
     artifact_paths: "helloworld-*.tgz"
+    plugins:
+      - generate-provenance-attestation#v1.1.0:
+          artifacts: "helloworrld-*.tgz"
+          attestation_name: "helloworld-attestation.json"
