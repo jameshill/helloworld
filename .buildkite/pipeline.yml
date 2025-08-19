@@ -1,9 +1,17 @@
 steps:
-  - label: "Publish"
-    command: .buildkite/steps/publish.sh
-    key: publish
+  - label: "Pack"
+    command: .buildkite/steps/pack.sh
+    key: pack
     artifact_paths: "helloworld-*.tgz"
     plugins:
       - generate-provenance-attestation#v1.1.0:
           artifacts: "helloworrld-*.tgz"
           attestation_name: "helloworld-attestation.json"
+
+  - label: "Publish"
+    plugins:
+      - publish-to-packages#v2.2.0:
+          artifacts: "helloworld-*.tgz"
+          registry: "test-engine-sandbox/helloworld"
+          attestations:
+            - "helloworld-attestation.json"
