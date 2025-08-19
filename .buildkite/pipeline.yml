@@ -1,5 +1,4 @@
 steps:
-  - label: ":wave: Hello World"
   - label: "Publish"
     command: ./buildkite/steps/publish.sh
     key: publish
