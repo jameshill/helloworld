@@ -9,6 +9,7 @@ steps:
           attestation_name: "helloworld-attestation.json"
 
   - label: "Publish"
+    depends_on: "pack"
     plugins:
       - publish-to-packages#v2.2.0:
           artifacts: "helloworld-*.tgz"
