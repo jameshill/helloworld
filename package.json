@@ -1,0 +1,14 @@
+{
+  "name": "helloworld",
+  "version": "1.0.2",
+  "description": "An example Node package for printing hello worrld",
+  "main": "index.js",
+  "scripts": {
+    "main": "node index.js"
+  },
+  "author": "A Person",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://packages.buildkite.com/test-engine-sandbox/hello-world/npm/"
+  }
+}
