@@ -13,6 +13,6 @@ steps:
     plugins:
       - publish-to-packages#v2.2.0:
           artifacts: "helloworld-*.tgz"
-          registry: "test-engine-sandbox/helloworld"
+          registry: "test-engine-sandbox/hello-world"
           attestations:
             - "helloworld-attestation.json"
