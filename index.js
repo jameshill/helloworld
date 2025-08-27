@@ -1,1 +1,1 @@
-console.log("Hello world! 1.0.7");
+console.log("Hello world! 1.0.8");
