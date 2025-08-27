@@ -1,6 +1,6 @@
 {
   "name": "helloworld",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "An example Node package for printing hello worrld",
   "main": "index.js",
   "scripts": {

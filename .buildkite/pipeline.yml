@@ -5,7 +5,7 @@ steps:
     artifact_paths: "helloworld-*.tgz"
     plugins:
       - generate-provenance-attestation#v1.1.0:
-          artifacts: "helloworrld-*.tgz"
+          artifacts: "helloworld-*.tgz"
           attestation_name: "helloworld-attestation.json"
 
   - label: "Publish"
